@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/tr/tr.master" AutoEventWireup="true" CodeBehind="OdemeBasarili.aspx.cs" Inherits="Norosirurjihemsireligi2026_Web.tr.OdemeBasarili" %>

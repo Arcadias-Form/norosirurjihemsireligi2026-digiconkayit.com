@@ -1,0 +1,51 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #090831;
+}
+
+
+fieldset{
+    margin-bottom:2%;
+}
+
+legend, .legend {
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.LoadingIcon {
+    display: none;
+    width: 47px;
+}
+
+.AlseinTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+    .AlseinTable td:nth-child(3n+1) {
+        color: #f00;
+        width: 12px;
+        text-align: center;
+    }
+
+    .AlseinTable td:nth-child(3n+2) {
+        padding: 3px;
+        border: 1px solid black;
+        color: #ffffff;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        background: #0C85BC;
+    }
