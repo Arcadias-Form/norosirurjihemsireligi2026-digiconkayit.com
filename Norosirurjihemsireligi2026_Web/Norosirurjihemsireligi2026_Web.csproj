@@ -71,7 +71,7 @@
       <HintPath>..\packages\MimeKit.4.7.1\lib\net48\MimeKit.dll</HintPath>
     </Reference>
     <Reference Include="Model.Core">
-      <HintPath>..\..\uhyk2025.digiconkayit.com\Uhyk2025_Web\bin\Model.Core.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive\Masaüstü\Model.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
@@ -172,10 +172,10 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="VeritabaniIslemMerkezi.Core">
-      <HintPath>..\..\uhyk2025.digiconkayit.com\Uhyk2025_Web\bin\VeritabaniIslemMerkezi.Core.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive\Masaüstü\VeritabaniIslemMerkezi.Core.dll</HintPath>
     </Reference>
     <Reference Include="VeritabaniIslemSaglayici.Core.Access">
-      <HintPath>..\..\uhyk2025.digiconkayit.com\Uhyk2025_Web\bin\VeritabaniIslemSaglayici.Core.Access.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive\Masaüstü\VeritabaniIslemSaglayici.Core.Access.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="XLParser, Version=1.7.2.0, Culture=neutral, PublicKeyToken=63397e1e46bb91b4, processorArchitecture=MSIL">
@@ -189,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Norosirurjihemsireligi2026.mdb" />
+    <Content Include="App_Data\Norosirurjihemsireligi2026_yedek.mdb" />
     <Content Include="css\all.min.css" />
     <Content Include="css\AlseinCSS.css" />
     <Content Include="css\bootstrap-datepicker.min.css" />
@@ -205,7 +206,7 @@
     <Content Include="en\RegistrationSuccess.aspx" />
     <Content Include="ExcelForm.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Gorseller\banner.png" />
+    <Content Include="Gorseller\banner.jpg" />
     <Content Include="Gorseller\bg.png" />
     <Content Include="Gorseller\checkBox.png" />
     <Content Include="Gorseller\checkBox_checked.png" />

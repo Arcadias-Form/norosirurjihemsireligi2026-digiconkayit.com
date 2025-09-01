@@ -11,9 +11,9 @@ namespace Model
             NormalDonem
         };
 
-        public static DateTime CokErkenTarih { get { return new DateTime(2026, 2, 15, 23, 59, 59); } }
+        public static DateTime CokErkenTarih { get { return new DateTime(2026, 3, 14, 23, 59, 59); } }
 
-        public static DateTime ErkenTarih { get { return new DateTime(2026, 3, 15, 23, 59, 59); } }
+        public static DateTime ErkenTarih { get { return new DateTime(2026, 4, 7, 23, 59, 59); } }
 
         public static Donemler Donem
         {
