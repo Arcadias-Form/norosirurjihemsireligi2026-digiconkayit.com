@@ -213,7 +213,11 @@
     <Content Include="Gorseller\DevBy.png" />
     <Content Include="Gorseller\Failed.png" />
     <Content Include="Gorseller\loadspinner.gif" />
+    <Content Include="Gorseller\logo-white.png" />
+    <Content Include="Gorseller\mastercard.png" />
+    <Content Include="Gorseller\ssl.png" />
     <Content Include="Gorseller\tick.png" />
+    <Content Include="Gorseller\visa.png" />
     <Content Include="js\AlseinJS.js" />
     <Content Include="js\bootstrap-datepicker.min.js" />
     <Content Include="js\bootstrap-datepicker.tr.min.js" />

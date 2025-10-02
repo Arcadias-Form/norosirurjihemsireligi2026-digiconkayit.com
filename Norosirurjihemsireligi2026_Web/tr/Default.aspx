@@ -279,9 +279,6 @@
                 </div>
 
 
-
-
-
                 <asp:Panel ID="PnlBankaBilgisi" runat="server" Visible="False">
                     <fieldset class="mt-3">
                         <legend>Hesap Bilgileri</legend>

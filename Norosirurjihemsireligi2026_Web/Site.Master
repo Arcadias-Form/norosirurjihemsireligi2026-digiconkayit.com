@@ -1,4 +1,4 @@
-ï»¿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Norosirurjihemsireligi2026_Web.Site" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Norosirurjihemsireligi2026_Web.Site" %>
 
 <!DOCTYPE html>
 
@@ -48,22 +48,50 @@
     </div>
 </div>
 
-<div class="container-fluid p-0 " style="background: #fff; position: fixed; bottom: 0; width: 100%;">
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+
+        <%--<footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
             <p class="col-md-4 p-2 text-center">&copy <%= DateTime.Now.Year %></p>
             <div class="col-md-4"></div>
-            <div class="col-md-4 p-2 text-center">
-                <div>
-                    <asp:HyperLink ID="hyplnkArcadias" runat="server" NavigateUrl="https://www.arcadiastech.com" Target="_blank">
-                        <asp:Image ID="ImgDev" runat="server" ImageUrl="~/Gorseller/DevBy.png" Style="width: 160px;" />
-                    </asp:HyperLink>
-                </div>
-                <div><asp:Label ID="lblVersion" runat="server" Text=""></asp:Label> </div>
-            </div>
-        </footer>
+            <div class="col-md-4 p-2 text-center">--%>
+
+
+                
+  
+<footer>
+  <div class="content">
+    
+    <div class="logo-wrapper">
+      <img src="<%=ResolveClientUrl("~/Gorseller/logo-white.png") %>" alt="Logo" class="footer-logo">
     </div>
+
+    <div class="footer-bottom">
+      <div class="address">
+      
+         <p>Þenlikköy Mah. Yeþilköy Cd. No:9<br>34153 Bakýrköy / Ýstanbul</p>
+
+          <p style="font-size: 21px;"><bold>Telefon:</bold> 212 231 97 47</p>
+      </div>
+
+   <div class="cards">
+  <img src="<%=ResolveClientUrl("~/Gorseller/mastercard.png") %>"class="card-logo">
+  <img src="<%=ResolveClientUrl("~/Gorseller/visa.png") %>" class="card-logo">
+         <img src="<%=ResolveClientUrl("~/Gorseller/ssl.png") %>" class="card-logo">
+
 </div>
+
+ 
+
+
+    </div>
+    
+  </div>
+
+  <p class="copyright">
+      &copy;
+      <asp:Label ID="lblVersion" Text="" runat="server" /> Arcadias Tech
+  </p>
+</footer>
+
 
     <div id="Uyari" runat="server" class="modal fade" role="dialog" data-bs-backdrop="static">
         <div class="modal-dialog" role="document">

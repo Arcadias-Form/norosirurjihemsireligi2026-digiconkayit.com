@@ -1,10 +1,10 @@
-ï»¿//------------------------------------------------------------------------------
-// <otomatik olarak oluÅŸturulmuÅŸ>
-//     Bu kod bir araÃ§ tarafÄ±ndan oluÅŸturuldu.
+//------------------------------------------------------------------------------
+// <otomatik olarak oluşturulmuş>
+//     Bu kod bir araç tarafından oluşturuldu.
 //
-//     Bu dosyada yapÄ±lacak deÄŸiÅŸiklikler hatalÄ± davranÄ±ÅŸa neden olabilir ve
-//     kod tekrar Ã¼retildi. 
-// </otomatik olarak oluÅŸturulmuÅŸ>
+//     Bu dosyada yapılacak değişiklikler hatalı davranışa neden olabilir ve
+//     kod tekrar üretildi. 
+// </otomatik olarak oluşturulmuş>
 //------------------------------------------------------------------------------
 
 namespace Norosirurjihemsireligi2026_Web
@@ -18,8 +18,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Main_Title denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main_Title;
 
@@ -27,8 +27,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Main_Head denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main_Head;
 
@@ -36,8 +36,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Main_Banner denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main_Banner;
 
@@ -45,8 +45,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// form1 denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
@@ -54,8 +54,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Main_Content denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main_Content;
 
@@ -63,8 +63,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Main_SubContent denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Main_SubContent;
 
@@ -72,8 +72,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Image1 denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
 
@@ -81,35 +81,17 @@ namespace Norosirurjihemsireligi2026_Web
         /// Label1 denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// hyplnkArcadias denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hyplnkArcadias;
-
-        /// <summary>
-        /// ImgDev denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImgDev;
 
         /// <summary>
         /// lblVersion denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblVersion;
 
@@ -117,8 +99,8 @@ namespace Norosirurjihemsireligi2026_Web
         /// Uyari denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Uyari;
     }
