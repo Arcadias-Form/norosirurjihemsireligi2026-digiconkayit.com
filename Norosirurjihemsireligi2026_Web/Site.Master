@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Norosirurjihemsireligi2026_Web.Site" %>
+ï»¿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Norosirurjihemsireligi2026_Web.Site" %>
 
 <!DOCTYPE html>
 
@@ -67,7 +67,7 @@
     <div class="footer-bottom">
       <div class="address">
       
-         <p>Þenlikköy Mah. Yeþilköy Cd. No:9<br>34153 Bakýrköy / Ýstanbul</p>
+         <p>ï¿½enlikkï¿½y Mah. Yeï¿½ilkï¿½y Cd. No:9<br>34153 Bakï¿½rkï¿½y / ï¿½stanbul</p>
 
           <p style="font-size: 21px;"><bold>Telefon:</bold> 212 231 97 47</p>
       </div>
