@@ -206,7 +206,7 @@
     <Content Include="en\RegistrationSuccess.aspx" />
     <Content Include="ExcelForm.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Gorseller\banner.jpg" />
+    <Content Include="Gorseller\banner.png" />
     <Content Include="Gorseller\bg.png" />
     <Content Include="Gorseller\checkBox.png" />
     <Content Include="Gorseller\checkBox_checked.png" />
