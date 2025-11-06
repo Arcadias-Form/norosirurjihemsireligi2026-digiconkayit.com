@@ -27,7 +27,7 @@ namespace VeritabaniIslemMerkezi
             {
                 mm.From.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@digiconkayit.com"));
                 mm.To.Add(new MailboxAddress(YeniKayit.KatilimciBilgisi.AdSoyad, YeniKayit.KatilimciBilgisi.ePosta));
-              mm.Bcc.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@honestglobal.com"));
+             //   mm.Bcc.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@honestglobal.com"));
 
                 switch (DilID)
                 {
@@ -35,58 +35,61 @@ namespace VeritabaniIslemMerkezi
                     case "tr":
                         mm.Subject = "Türk Nörosirurji Dernegi 39. Bilimsel Kongresi Kayýt Bilgilendirme";
 
+                        string tableStyle = "width:100%; border-collapse:collapse; font-family:Arial, sans-serif;";
+                        string headerStyle = "background-color:#99ccff; color:#000000; text-align:center; font-weight:bold;";
+                        string subHeaderStyle = "background-color:#cce6ff; color:#000000; text-align:center; font-weight:bold;";
+                        string rowStyle = "background-color:#ffffff; color:#000000;";
+                        string cellStyle = "padding:8px; border:1px solid #99ccff;";
+
                         OutlookContent = new StringBuilder()
                             .Append($"<p>Sayýn {YeniKayit.KatilimciBilgisi.AdSoyad},</p>")
-                            .Append($"<div><p>09 - 12 Nisan 2026 tarihlerinde gerçekleþecek olan Türk Nörosirurji Dernegi 39. Bilimsel Kongresine kayýt yaptýrdýðýnýz için teþekkür ederiz.</p>{(YeniKayit.OdemeTipiID.Equals(1) ? $"<p>Ön kaydýnýz, ödeme sonrasý dekontunuzu ilettiðiniz de onaylanacaktýr.</p><p><u><b>Ödeme tutarý, ödeme yaptýðýnýz tarihteki dönem ücretine göre yapýlmalýdýr.</b></u> Aksi taktirde ön kaydýnýz onaylanmayacaktýr.</p><p>Ödemeyi, <u><b>sipariþ numarasý</b></u>'ný dekontunuzda belirterek yapmayý unutmayýnýz. Dekontunuzu <a href=\"mailto:tnd2026@honestglobal.com\">tnd2026@honestglobal.com</a> adresine iletmeyi unutmayýnýz.</p><p></p>" : string.Empty)}<p>Katýlým bilgileriniz aþaðýdadýr:</p></div>")
-                            .Append("<table style=\"width:100%;\" border=\"1\">")
-                            .Append($"<tr><td colspan=\"2\" style=\"{textCenter}\"><b>Kiþisel Bilgiler</b></td></tr>")
-                            .Append($"<tr><td style=\"width:30%;\">Kimlik No</td><td>{YeniKayit.KatilimciBilgisi.KimlikNo}</td></tr>")
-                            .Append($"<tr><td>Cinsiyet</td><td>{YeniKayit.KatilimciBilgisi.Cinsiyet}</td></tr>")
-                            .Append($"<tr><td>e-Posta</td><td>{YeniKayit.KatilimciBilgisi.ePosta}</td></tr>")
-                            .Append($"<tr><td>Cep Telefonu</td><td>{YeniKayit.KatilimciBilgisi.CepTelefonu}</td></tr>")
-                            .Append($"<tr><td>Kurum</td><td>{YeniKayit.KatilimciBilgisi.Kurum}</td></tr>")
-                            .Append($"<tr><td colspan=\"2\">&nbsp;</td></tr>")
-                            .Append($"<tr><td colspan=\"2\" style=\"{textCenter}\"><b>Hizmetler</b></td></tr>")
-                            .Append($"<tr><td>Katýlýmcý Tipi</td><td>{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.KatilimciTipiBilgisi.KatilimciTipiDilBilgisi.First().KatilimciTipi}</td></tr>")
-                            .Append($"<tr><td>Konaklama</td><td>{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.OtelBilgisi.Otel} / {YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.OdaTipiDilBilgisi.First().OdaTipi}</td></tr>")
-                            .Append($"<tr><td>Giriþ Tarihi</td><td>{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.GirisTarihi:dd.MM.yyyy}</td></tr>")
-                            .Append($"<tr><td>Cýkýþ Tarihi</td><td>{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.CikisTarihi:dd.MM.yyyy}</td></tr>")
-                            ;
+                            .Append($"<div><p>09 - 12 Nisan 2026 tarihlerinde gerçekleþecek olan Türk Nörosirurji Dernegi 39. Bilimsel Kongresine kayýt yaptýrdýðýnýz için teþekkür ederiz.</p>{(YeniKayit.OdemeTipiID.Equals(1) ? $"<p>Ön kaydýnýz, ödeme sonrasý dekontunuzu ilettiðinizde onaylanacaktýr.</p><p><u><b>Ödeme tutarý, ödeme yaptýðýnýz tarihteki dönem ücretine göre yapýlmalýdýr.</b></u> Aksi taktirde ön kaydýnýz onaylanmayacaktýr.</p><p>Ödemeyi, <u><b>sipariþ numarasý</b></u>'ný dekontunuzda belirterek yapmayý unutmayýnýz. Dekontunuzu <a href=\"mailto:tnd2026@honestglobal.com\">tnd2026@honestglobal.com</a> adresine iletmeyi unutmayýnýz.</p><p></p>" : string.Empty)}<p>Katýlým bilgileriniz aþaðýdadýr:</p></div>")
+                            .Append($"<table style=\"{tableStyle}\">")
+                            .Append($"<tr><td colspan=\"2\" style=\"{headerStyle}\">Kiþisel Bilgiler</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle} width:30%;\">Kimlik No</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KimlikNo}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Cinsiyet</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.Cinsiyet}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">e-Posta</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.ePosta}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Cep Telefonu</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.CepTelefonu}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Kurum</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.Kurum}</td></tr>")
+                            .Append($"<tr><td colspan=\"2\" style=\"{cellStyle}\">&nbsp;</td></tr>")
+                            .Append($"<tr><td colspan=\"2\" style=\"{subHeaderStyle}\">Hizmetler</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Katýlýmcý Tipi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.KatilimciTipiBilgisi.KatilimciTipiDilBilgisi.First().KatilimciTipi}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Konaklama</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.OtelBilgisi.Otel} / {YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.OdaTipiDilBilgisi.First().OdaTipi}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Giriþ Tarihi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.GirisTarihi:dd.MM.yyyy}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Çýkýþ Tarihi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.CikisTarihi:dd.MM.yyyy}</td></tr>");
 
                         if (YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.RefakatciDurum)
                         {
                             OutlookContent
-                                .Append($"<tr><td>Refakatçi</td><td>{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.Refakatci}</td></tr>");
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Refakatçi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.Refakatci}</td></tr>");
                         }
 
                         OutlookContent
-                            .Append("<tr><td colspan=\"2\">&nbsp;</td></tr>")
-                            .Append($"<tr><td colspan=\"2\" style=\"{textCenter}\"><b>Ödeme ve Fatura Bilgileri</b></td></tr>")
-                            .Append($"<tr><td>Fatura Tipi</td><td>{YeniKayit.KatilimciBilgisi.FaturaTipi}</td></tr>")
-                            .Append($"<tr><td>Fatura Ünvaný</td><td>{YeniKayit.KatilimciBilgisi.FaturaUnvan}</td></tr>")
-                            .Append($"<tr><td>Fatura Adresi</td><td>{YeniKayit.KatilimciBilgisi.FaturaAdres}</td></tr>")
-                            .Append($"<tr><td>Vergi Dairesi</td><td>{YeniKayit.KatilimciBilgisi.VergiDairesi}</td></tr>")
-                            .Append($"<tr><td>Vergi No</td><td>{YeniKayit.KatilimciBilgisi.VergiNo}</td></tr>")
-                            .Append($"<tr><td>Ödeme Tipi</td><td>{YeniKayit.OdemeTipiBilgisi.OdemeTipiDilBilgisi.First().OdemeTipi}</td></tr>")
-                            .Append($"<tr><td>Sipariþ Numarasý</td><td>{YeniKayit.OdemeID}</td></tr>")
-                            .Append($"<tr><td>Toplam</td><td>{YeniKayit.DovizUcret}</td></tr>");
+                            .Append($"<tr><td colspan=\"2\" style=\"{cellStyle}\">&nbsp;</td></tr>")
+                            .Append($"<tr><td colspan=\"2\" style=\"{subHeaderStyle}\">Ödeme ve Fatura Bilgileri</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Fatura Tipi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.FaturaTipi}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Fatura Ünvaný</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.FaturaUnvan}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Fatura Adresi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.FaturaAdres}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Vergi Dairesi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.VergiDairesi}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Vergi No</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.VergiNo}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Ödeme Tipi</td><td style=\"{cellStyle}\">{YeniKayit.OdemeTipiBilgisi.OdemeTipiDilBilgisi.First().OdemeTipi}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Sipariþ Numarasý</td><td style=\"{cellStyle}\">{YeniKayit.OdemeID}</td></tr>")
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Toplam</td><td style=\"{cellStyle}\">{YeniKayit.DovizUcret}</td></tr>");
 
                         if (YeniKayit.OdemeTipiID.Equals(1))
                         {
                             OutlookContent
-                                .Append("<tr><td colspan=\"2\">&nbsp;</td></tr>")
-                                .Append($"<tr><td colspan=\"2\" style=\"{textCenter}\"><b>Banka Havalesi Bilgisi</b></td></tr>")
-                                .Append($"<tr><td>Banka</td><td> AKBANK </td></tr>")
-
-                                .Append($"<tr><td>Hesap Adý</td><td>  AKTÝV TURÝZM SEYEHAT VE KARGO TAÞIMACILIÐI </td></tr>")
-                                .Append($"<tr><td>Þube</td><td>  HASANPAÞA ÞUBE - 0235 </td></tr>")
-                                .Append($"<tr><td>TL IBAN</td><td>  TR36 0004 6002 3588 8000 1624 39 </td></tr>")
-                                .Append($"<tr><td>EURO IBAN</td><td>  TR80 0004 6002 3503 6000 1296 99 </td></tr>")
-                                .Append($"<tr><td>Açýklama</td><td>  ISTKONGRETND_2026</td></tr>");
+                                .Append($"<tr><td colspan=\"2\" style=\"{cellStyle}\">&nbsp;</td></tr>")
+                                .Append($"<tr><td colspan=\"2\" style=\"{subHeaderStyle}\">Banka Havalesi Bilgisi</td></tr>")
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Banka</td><td style=\"{cellStyle}\"> AKBANK </td></tr>")
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Hesap Adý</td><td style=\"{cellStyle}\">  AKTÝV TURÝZM SEYEHAT VE KARGO TAÞIMACILIÐI </td></tr>")
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Þube</td><td style=\"{cellStyle}\">  HASANPAÞA ÞUBE - 0235 </td></tr>")
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">TL IBAN</td><td style=\"{cellStyle}\">  TR36 0004 6002 3588 8000 1624 39 </td></tr>")
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">EURO IBAN</td><td style=\"{cellStyle}\">  TR80 0004 6002 3503 6000 1296 99 </td></tr>")
+                                .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Açýklama</td><td style=\"{cellStyle}\">  ISTKONGRETND_2026</td></tr>");
                         }
 
-                        OutlookContent
-                            .Append("</table>");
+                        OutlookContent.Append("</table>");
                         break;
 
                     case "en":

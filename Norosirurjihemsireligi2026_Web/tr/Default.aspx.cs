@@ -29,6 +29,9 @@ namespace Norosirurjihemsireligi2026_Web.tr
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            new MailGonderimIslemleri().KayitBilgilendirme("NRSH2025110615065381", "tr");
+
+
             if (!IsPostBack)
             {
                 ddlKatilimciTipi.DataBind();
