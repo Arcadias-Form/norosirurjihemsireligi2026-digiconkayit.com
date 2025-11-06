@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.FriendlyUrls;
+using Microsoft.AspNet.FriendlyUrls;
 using Model;
 using System;
 using System.Collections;
@@ -34,7 +34,7 @@ namespace Norosirurjihemsireligi2026_Web.tr
                     File.WriteAllText(Server.MapPath($"~/Dosyalar/PaymentLog/Fail/{segment.First()}_{DateTime.Now:yyyy.MM.dd HH.mm.ss}.log"), Parametreler.ToString().Replace(" ///// ", "\r\n"));
 
                     SDataModel = new OdemeTablosuIslemler().KayitBilgisi(segment.First(), "tr");
-                    if (SDataModel.Sonuc.Equals(Sonuclar.Basarili) && !SDataModel.Veriler.Durum && SDataModel.Veriler.OdemeTarihi is null /* && Banka kontrolü */)
+                    if (SDataModel.Sonuc.Equals(Sonuclar.Basarili) && !SDataModel.Veriler.Durum && SDataModel.Veriler.OdemeTarihi is null)
                     {
                         SDataModel.Veriler.Durum = false;
                         SDataModel.Veriler.OdemeParametreleri = "";

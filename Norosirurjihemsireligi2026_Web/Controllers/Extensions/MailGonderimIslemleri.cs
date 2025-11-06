@@ -27,7 +27,7 @@ namespace VeritabaniIslemMerkezi
             {
                 mm.From.Add(new MailboxAddress("20.Nöroþirüji Hemþireliði Kongresi", "norosirurjihemsireligi2026@digiconkayit.com"));
                 mm.To.Add(new MailboxAddress(YeniKayit.KatilimciBilgisi.AdSoyad, YeniKayit.KatilimciBilgisi.ePosta));
-                mm.Bcc.Add(new MailboxAddress("20.Nöroþirüji Hemþireliði Kongresi", "tnd2026@honestglobal.com"));
+              mm.Bcc.Add(new MailboxAddress("20.Nöroþirüji Hemþireliði Kongresi", "tnd2026@honestglobal.com"));
 
                 switch (DilID)
                 {

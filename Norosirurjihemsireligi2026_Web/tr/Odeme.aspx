@@ -1,4 +1,4 @@
-ï»¿<%@ Page Title="" Language="C#" MasterPageFile="~/tr/tr.master" AutoEventWireup="true" CodeBehind="Odeme.aspx.cs" Inherits="Norosirurjihemsireligi2026_Web.tr.Odeme" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/tr/tr.master" AutoEventWireup="true" CodeBehind="Odeme.aspx.cs" Inherits="Norosirurjihemsireligi2026_Web.tr.Odeme" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="tr_Head" runat="server">
     <script src="<%=ResolveClientUrl("~/js/jquery.inputmask.min.js") %>"></script>
@@ -20,7 +20,7 @@
                 <table class="AlseinTable">
                     <tr>
                         <td>*</td>
-                        <td>KatÄ±lÄ±mcÄ±</td>
+                        <td>Katýlýmcý</td>
                         <td>
                             <asp:Label ID="lblAdSoyad" runat="server" CssClass="form-control"></asp:Label>
                             <asp:HiddenField ID="hfePosta" runat="server" Visible="false" />
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td>Ãœcret</td>
+                        <td>Ücret</td>
                         <td>
                             <asp:Label ID="lblDovizUcret" runat="server" CssClass="form-control"></asp:Label>
                             <asp:HiddenField ID="hfDovizUcret" runat="server" Visible="false" />
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td>SipariÅŸ NumarasÄ±</td>
+                        <td>Sipariþ Numarasý</td>
                         <td>
                             <asp:Label ID="lblOdemeID" runat="server" CssClass="form-control"></asp:Label>
                             <asp:HiddenField ID="hfOdemeID" runat="server" Visible="false" />
@@ -44,32 +44,32 @@
                     </tr>
                     <tr>
                         <td>*</td>
-                        <td>Kredi KartÄ±n Ait OlduÄŸu Ãœlke</td>
+                        <td>Kredi Kartýn Ait Olduðu Ülke</td>
                         <td>
                             <asp:DropDownList ID="ddlKrediKartiUlke" runat="server" CssClass="form-control">
-                                <asp:ListItem Text="SeÃ§iniz" Value=""></asp:ListItem>
-                                <asp:ListItem Text="TÃ¼rkiye / China" Value="true"></asp:ListItem>
-                                <asp:ListItem Text="DiÄŸer" Value="false"></asp:ListItem>
+                                <asp:ListItem Text="Seçiniz" Value=""></asp:ListItem>
+                                <asp:ListItem Text="Türkiye / China" Value="true"></asp:ListItem>
+                                <asp:ListItem Text="Diðer" Value="false"></asp:ListItem>
                             </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td>Kredi Kart NumarasÄ±</td>
+                        <td>Kredi Kart Numarasý</td>
                         <td>
                             <asp:TextBox ID="txtKrediKartNo" runat="server" CssClass="form-control"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td>Son KullanÄ±m Tarihi( Ay )</td>
+                        <td>Son Kullaným Tarihi( Ay )</td>
                         <td>
                             <asp:TextBox ID="txtAy" runat="server" CssClass="form-control"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td>Son KullanÄ±m Tarihi ( YÄ±l )</td>
+                        <td>Son Kullaným Tarihi ( Yýl )</td>
                         <td>
                             <asp:TextBox ID="txtYil" runat="server" CssClass="form-control"></asp:TextBox>
                         </td>
@@ -78,12 +78,12 @@
                         <td>&nbsp;</td>
                         <td>CVV2</td>
                         <td>
-                            <asp:TextBox ID="txtCVV2" runat="server" CssClass="form-control" placeholder="KartÄ±nÄ±zÄ±n arkasÄ±nda ki 3 haneyi giriniz "></asp:TextBox>
+                            <asp:TextBox ID="txtCVV2" runat="server" CssClass="form-control" placeholder="Kartýnýzýn arkasýnda ki 3 haneyi giriniz "></asp:TextBox>
                         </td>
                     </tr>
                 </table>
                 <p align="center">
-                    <asp:LinkButton ID="lnkbtnKayitOl" runat="server" CssClass="btn btn-block btn-success mt-3 mb-3" OnClick="lnkbtnKayitOl_Click" OnClientClick="$(this).css('display', 'none');"><i class="fa fa-plus"></i>&nbsp;Ã–demeyi tamamla</asp:LinkButton>
+                    <asp:LinkButton ID="lnkbtnKayitOl" runat="server" CssClass="btn btn-block btn-success mt-3 mb-3" OnClick="lnkbtnKayitOl_Click" OnClientClick="$(this).css('display', 'none');"><i class="fa fa-plus"></i>&nbsp;Ödemeyi tamamla</asp:LinkButton>
                 </p>
             </fieldset>
         </div>

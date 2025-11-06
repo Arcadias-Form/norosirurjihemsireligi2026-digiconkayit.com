@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.FriendlyUrls;
+using Microsoft.AspNet.FriendlyUrls;
 using Model;
 using System;
 using System.Collections;
@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Web;
 using System.Web.UI;
 using VeritabaniIslemMerkezi;
 
@@ -35,18 +36,22 @@ namespace Norosirurjihemsireligi2026_Web.tr
 
                     SDataModel = new OdemeTablosuIslemler().KayitBilgisi(segment.First(), "tr");
 
-                    if (SDataModel.Sonuc.Equals(Sonuclar.Basarili)  /* && Banka Kontrolü */)
+                    if (SDataModel.Sonuc.Equals(Sonuclar.Basarili)
+                 &&     !string.IsNullOrEmpty(Request.Form["responseMessage"])
+&& string.Equals(Request.Form["responseMessage"], "BA�ARILI", StringComparison.OrdinalIgnoreCase))
+
                     {
                         SDataModel.Veriler.Durum = true;
                         SDataModel.Veriler.OdemeParametreleri = Parametreler.ToString();
                         SDataModel.Veriler.OdemeTarihi = new BilgiKontrolMerkezi().Simdi();
 
                         new OdemeTablosuIslemler().OdemeDurumGuncelle(SDataModel.Veriler);
-                        new MailGonderimIslemleri().KayitBilgilendirme(SDataModel.Veriler);
+                        new MailGonderimIslemleri().KayitBilgilendirme(SDataModel.Veriler, "tr");
                         Response.Redirect($"~/tr/BasariliKayit/{SDataModel.Veriler.OdemeID}");
                     }
                     else
-                    {
+                       {
+
                         Response.Redirect("~/tr");
                     }
                 }

@@ -1,10 +1,10 @@
-ï»¿//------------------------------------------------------------------------------
-// <otomatik olarak oluÅŸturulmuÅŸ>
-//     Bu kod bir araÃ§ tarafÄ±ndan oluÅŸturuldu.
+//------------------------------------------------------------------------------
+// <otomatik olarak oluşturulmuş>
+//     Bu kod bir araç tarafından oluşturuldu.
 //
-//     Bu dosyada yapÄ±lacak deÄŸiÅŸiklikler hatalÄ± davranÄ±ÅŸa neden olabilir ve
-//     kod tekrar Ã¼retildi. 
-// </otomatik olarak oluÅŸturulmuÅŸ>
+//     Bu dosyada yapılacak değişiklikler hatalı davranışa neden olabilir ve
+//     kod tekrar üretildi. 
+// </otomatik olarak oluşturulmuş>
 //------------------------------------------------------------------------------
 
 namespace Norosirurjihemsireligi2026_Web.tr
@@ -18,8 +18,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// lblAdSoyad denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAdSoyad;
 
@@ -27,8 +27,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// hfePosta denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hfePosta;
 
@@ -36,8 +36,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// lblDovizUcret denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDovizUcret;
 
@@ -45,8 +45,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// hfDovizUcret denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hfDovizUcret;
 
@@ -54,8 +54,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// lblOdemeID denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblOdemeID;
 
@@ -63,8 +63,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// hfOdemeID denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hfOdemeID;
 
@@ -72,8 +72,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// ddlKrediKartiUlke denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlKrediKartiUlke;
 
@@ -81,8 +81,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// txtKrediKartNo denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtKrediKartNo;
 
@@ -90,8 +90,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// txtAy denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAy;
 
@@ -99,8 +99,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// txtYil denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtYil;
 
@@ -108,8 +108,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// txtCVV2 denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCVV2;
 
@@ -117,8 +117,8 @@ namespace Norosirurjihemsireligi2026_Web.tr
         /// lnkbtnKayitOl denetimi.
         /// </summary>
         /// <remarks>
-        /// Otomatik olarak oluÅŸturulan alan.
-        /// DeÄŸiÅŸtirmek iÃ§in, alan bildirimini tasarÄ±mcÄ± dosyasÄ±ndan arka plan kod dosyasÄ±na taÅŸÄ±yÄ±n.
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkbtnKayitOl;
     }
