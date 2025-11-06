@@ -180,7 +180,7 @@ namespace Norosirurjihemsireligi2026_Web.tr
                 ePosta = Kontrol.ePostaKontrol(txtePosta, "e-Posta boş bırakılamaz", "Geçersiz eposta adresi girdiniz", ref Uyarilar),
                 CepTelefonu = Kontrol.KelimeKontrol(txtTelefon, "Cep Telefonu boş bırakılamaz", ref Uyarilar),
                 Kurum = txtKurum.Text,
-                KimlikNo = Kontrol.KelimeKontrol(txtKimlikNo, "TC kimlik no boş bırakılamaz", ref Uyarilar),
+                KimlikNo = Kontrol.KimlikNoKontrol(txtKimlikNo, "TC kimlik no boş bırakılamaz", "Geçersiz TC kimlik no girdiniz",  ref Uyarilar),
                 FaturaTipi = Kontrol.KelimeKontrol(ddlFaturaTipi, "Fatura tipini seçiniz", ref Uyarilar),
                 FaturaUnvan = Kontrol.KelimeKontrol(txtFaturaUnvan, "Fatura unvan boş bırakılamaz", ref Uyarilar),
                 FaturaAdres = Kontrol.KelimeKontrol(txtFaturaAdres, "Fatura adres boş bırakılamaz", ref Uyarilar),

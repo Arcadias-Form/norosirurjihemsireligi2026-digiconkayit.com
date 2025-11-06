@@ -10,9 +10,11 @@
             datePickerOption.language = "tr";
             datePickerOption.placeholder = "Tarih seçmek için tıklayınız.";
             $('#<%= txtTelefon.ClientID%>').inputmask("(599) 999 99 99", { onincomplete: () => { $('#<%= txtTelefon.ClientID%>').val(''); } });
+            $('#<%= txtKimlikNo.ClientID%>').inputmask("99999999999", { onincomplete: () => { $('#<%= txtTelefon.ClientID%>').val(''); } });
             setDatePicker();
         }
     </script>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="tr_Content" runat="server">
