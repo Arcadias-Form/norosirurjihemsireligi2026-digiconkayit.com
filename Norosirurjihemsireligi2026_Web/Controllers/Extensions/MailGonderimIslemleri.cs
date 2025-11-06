@@ -25,19 +25,19 @@ namespace VeritabaniIslemMerkezi
         {
             using (MimeMessage mm = new MimeMessage())
             {
-                mm.From.Add(new MailboxAddress("20.Nöroþirüji Hemþireliði Kongresi", "norosirurjihemsireligi2026@digiconkayit.com"));
+                mm.From.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@digiconkayit.com"));
                 mm.To.Add(new MailboxAddress(YeniKayit.KatilimciBilgisi.AdSoyad, YeniKayit.KatilimciBilgisi.ePosta));
-              mm.Bcc.Add(new MailboxAddress("20.Nöroþirüji Hemþireliði Kongresi", "tnd2026@honestglobal.com"));
+              mm.Bcc.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@honestglobal.com"));
 
                 switch (DilID)
                 {
                     default:
                     case "tr":
-                        mm.Subject = "20.Nöroþirüji Hemþireliði Kongresi Kayýt Bilgilendirme";
+                        mm.Subject = "Türk Nörosirurji Dernegi 39. Bilimsel Kongresi Kayýt Bilgilendirme";
 
                         OutlookContent = new StringBuilder()
                             .Append($"<p>Sayýn {YeniKayit.KatilimciBilgisi.AdSoyad},</p>")
-                            .Append($"<div><p>20.Nöroþirüji Hemþireliði Kongresine kayýt yaptýrdýðýnýz için teþekkür ederiz.</p>{(YeniKayit.OdemeTipiID.Equals(1) ? $"<p>Ön kaydýnýz, ödeme sonrasý dekontunuzu ilettiðiniz de onaylanacaktýr.</p><p><u><b>Ödeme tutarý, ödeme yaptýðýnýz tarihteki dönem ücretine göre yapýlmalýdýr.</b></u> Aksi taktirde ön kaydýnýz onaylanmayacaktýr.</p><p>Ödemeyi, <u><b>sipariþ numarasý</b></u>'ný dekontunuzda belirterek yapmayý unutmayýnýz. Dekontunuzu <a href=\"mailto:tnd2026@honestglobal.com\">tnd2026@honestglobal.com</a> adresine iletmeyi unutmayýnýz.</p><p></p>" : string.Empty)}<p>Katýlým bilgileriniz aþaðýdadýr:</p></div>")
+                            .Append($"<div><p>09 - 12 Nisan 2026 tarihlerinde gerçekleþecek olan Türk Nörosirurji Dernegi 39. Bilimsel Kongresine kayýt yaptýrdýðýnýz için teþekkür ederiz.</p>{(YeniKayit.OdemeTipiID.Equals(1) ? $"<p>Ön kaydýnýz, ödeme sonrasý dekontunuzu ilettiðiniz de onaylanacaktýr.</p><p><u><b>Ödeme tutarý, ödeme yaptýðýnýz tarihteki dönem ücretine göre yapýlmalýdýr.</b></u> Aksi taktirde ön kaydýnýz onaylanmayacaktýr.</p><p>Ödemeyi, <u><b>sipariþ numarasý</b></u>'ný dekontunuzda belirterek yapmayý unutmayýnýz. Dekontunuzu <a href=\"mailto:tnd2026@honestglobal.com\">tnd2026@honestglobal.com</a> adresine iletmeyi unutmayýnýz.</p><p></p>" : string.Empty)}<p>Katýlým bilgileriniz aþaðýdadýr:</p></div>")
                             .Append("<table style=\"width:100%;\" border=\"1\">")
                             .Append($"<tr><td colspan=\"2\" style=\"{textCenter}\"><b>Kiþisel Bilgiler</b></td></tr>")
                             .Append($"<tr><td style=\"width:30%;\">Kimlik No</td><td>{YeniKayit.KatilimciBilgisi.KimlikNo}</td></tr>")
@@ -163,7 +163,7 @@ namespace VeritabaniIslemMerkezi
                         {
                             client.Connect("mail.digiconkayit.com", 587, MailKit.Security.SecureSocketOptions.None);
                             client.AuthenticationMechanisms.Remove("DIGEST-MD5");
-                            client.Authenticate("norosirurjihemsireligi2026@digiconkayit.com", "eaQ-g8fh");
+                            client.Authenticate("tnd2026@digiconkayit.com", "eaQ-g8fh");
 
                             client.Send(mm);
                             client.Disconnect(true);

@@ -31,7 +31,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
+                            <td>*</td>
                             <td>Kimlik No</td>
                             <td>
                                 <asp:TextBox ID="txtKimlikNo" runat="server" CssClass="form-control"></asp:TextBox>
