@@ -166,7 +166,7 @@
                                 <asp:TextBox ID="txtRefakatci" runat="server" CssClass="form-control" onchange="toUpper(this);" onkeyup="toUpper(this);"></asp:TextBox>
                             </td>
                         </tr>
-                        <tr id="tr_Transfer" runat="server" visible="false">
+                        <tr id="tr_Transfer" runat="server" visible="true">
                             <td>*</td>
                             <td>Transfer Tipi</td>
                             <td>
@@ -233,7 +233,7 @@
                                 <asp:HiddenField ID="hfKatilimciTipiOdaTipiUcret" runat="server" Visible="false" />
                             </td>
                         </tr>
-                        <tr id="tr_transferUcret" runat="server" visible="false">
+                        <tr id="tr_transferUcret" runat="server" visible="true">
                             <td>&nbsp;</td>
                             <td>Transfer Ücreti</td>
                             <td>
@@ -340,7 +340,7 @@
 
     <asp:SqlDataSource runat="server" ID="OleDbKatilimciTipiListesi" ConnectionString='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web %>' ProviderName='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web.ProviderName %>' SelectCommand="SELECT [KatilimciTipiDilTablosu].* FROM [KatilimciTipiDilTablosu] INNER JOIN [KatilimciTipiTablosu] ON [KatilimciTipiDilTablosu].[KatilimciTipiID] = [KatilimciTipiTablosu].[KatilimciTipiID] WHERE [KatilimciTipiDilTablosu].[DilID] = 'tr' ORDER BY [KatilimciTipiTablosu].[Sira]"></asp:SqlDataSource>
 
-    <asp:SqlDataSource runat="server" ID="OleDbOtelListesi" ConnectionString='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web %>' ProviderName='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web.ProviderName %>' SelectCommand="SELECT * FROM [OtelTablosu] WHERE OtelID IN (3, 4) ORDER BY Sira"></asp:SqlDataSource>
+    <asp:SqlDataSource runat="server" ID="OleDbOtelListesi" ConnectionString='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web %>' ProviderName='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web.ProviderName %>' SelectCommand="SELECT * FROM [OtelTablosu] WHERE OtelID IN (2,3, 4) ORDER BY Sira"></asp:SqlDataSource>
 
     <asp:SqlDataSource runat="server" ID="OleDbKatilimciTipiOdaTipiListesi" ConnectionString='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web %>' ProviderName='<%$ ConnectionStrings:Norosirurjihemsireligi2026_Web.ProviderName %>' SelectCommand="SELECT [KatilimciTipiOdaTipiTablosu].[KatilimciTipiOdaTipiID], [OdaTipiDilTablosu].[OdaTipi] FROM ( [OdaTipiDilTablosu] INNER JOIN [OdaTipiTablosu] ON [OdaTipiDilTablosu].[OdaTipiID] = [OdaTipiTablosu].[OdaTipiID] ) INNER JOIN [KatilimciTipiOdaTipiTablosu] ON [OdaTipiTablosu].[OdaTipiID] = [KatilimciTipiOdaTipiTablosu].[OdaTipiID] WHERE [OdaTipiDilTablosu].[DilID] = 'tr' AND [KatilimciTipiOdaTipiTablosu].[KatilimciTipiID] = ? AND [OdaTipiTablosu].[OtelID] = ? ORDER BY [OdaTipiTablosu].[Sira]">
         <SelectParameters>

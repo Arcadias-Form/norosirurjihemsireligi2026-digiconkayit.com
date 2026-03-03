@@ -27,7 +27,7 @@ namespace VeritabaniIslemMerkezi
             {
                 mm.From.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@digiconkayit.com"));
                 mm.To.Add(new MailboxAddress(YeniKayit.KatilimciBilgisi.AdSoyad, YeniKayit.KatilimciBilgisi.ePosta));
-             //   mm.Bcc.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@honestglobal.com"));
+               mm.Bcc.Add(new MailboxAddress("Türk Nörosirurji Dernegi 39. Bilimsel Kongresi", "tnd2026@honestglobal.com"));
 
                 switch (DilID)
                 {
@@ -56,7 +56,8 @@ namespace VeritabaniIslemMerkezi
                             .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Katýlýmcý Tipi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.KatilimciTipiBilgisi.KatilimciTipiDilBilgisi.First().KatilimciTipi}</td></tr>")
                             .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Konaklama</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.OtelBilgisi.Otel} / {YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.OdaTipiDilBilgisi.First().OdaTipi}</td></tr>")
                             .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Giriþ Tarihi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.GirisTarihi:dd.MM.yyyy}</td></tr>")
-                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Çýkýþ Tarihi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.CikisTarihi:dd.MM.yyyy}</td></tr>");
+                            .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Çýkýþ Tarihi</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.CikisTarihi:dd.MM.yyyy}</td></tr>")
+                             .Append($"<tr style=\"{rowStyle}\"><td style=\"{cellStyle}\">Transfer</td><td style=\"{cellStyle}\">{YeniKayit.KatilimciBilgisi.TransferBilgisi.TransferTipiBilgisi.TransferTipiDilBilgisi.First().TransferTipi}</td></tr>");
 
                         if (YeniKayit.KatilimciBilgisi.KonaklamaBilgisi.KatilimciTipiOdaTipiBilgisi.OdaTipiBilgisi.RefakatciDurum)
                         {

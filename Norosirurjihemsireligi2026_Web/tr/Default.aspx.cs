@@ -203,7 +203,7 @@ namespace Norosirurjihemsireligi2026_Web.tr
                 TransferBilgisi = new TransferTablosuModel
                 {
                     KatilimciID = KatilimciID,
-                    TransferTipiID = 12,
+                    TransferTipiID = Kontrol.TamSayiyaKontrol(ddlTransferTipi, "Transfer tipini seçinizi", "Geçersiz transfer tipi seçildi", ref Uyarilar),
                     GuncellenmeTarihi = Kontrol.Simdi(),
                     EklenmeTarihi = Kontrol.Simdi()
                 },
