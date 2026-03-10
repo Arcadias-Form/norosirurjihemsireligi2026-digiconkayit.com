@@ -23,13 +23,18 @@ namespace Model
             MainRow[9] = KatilimciBilgisi.KonaklamaBilgisi.GirisTarihi.ToShortDateString();
             MainRow[10] = KatilimciBilgisi.KonaklamaBilgisi.CikisTarihi.ToShortDateString();
             MainRow[11] = KatilimciBilgisi.KonaklamaBilgisi.Refakatci;
-            MainRow[12] = KatilimciBilgisi.FaturaUnvan;
-            MainRow[13] = KatilimciBilgisi.FaturaAdres;
-            MainRow[14] = KatilimciBilgisi.VergiDairesi;
-            MainRow[15] = KatilimciBilgisi.VergiNo;
-            MainRow[16] = OdemeTipiBilgisi.OdemeTipiDilBilgisi.First().OdemeTipi;
-            MainRow[17] = $"{DovizUcret}";
-            MainRow[18] = $"{OdemeTarihi:dd.MM.yyyy HH:mm}";
+
+            MainRow[12] = KatilimciBilgisi.TransferBilgisi.TransferTipiBilgisi.TransferTipiDilBilgisi.First().TransferTipi;
+
+
+
+            MainRow[13] = KatilimciBilgisi.FaturaUnvan;
+            MainRow[14] = KatilimciBilgisi.FaturaAdres;
+            MainRow[15] = KatilimciBilgisi.VergiDairesi;
+            MainRow[16] = KatilimciBilgisi.VergiNo;
+            MainRow[17] = OdemeTipiBilgisi.OdemeTipiDilBilgisi.First().OdemeTipi;
+            MainRow[18] = $"{DovizUcret}";
+            MainRow[19] = $"{OdemeTarihi:dd.MM.yyyy HH:mm}";
 
             return MainRow;
         }

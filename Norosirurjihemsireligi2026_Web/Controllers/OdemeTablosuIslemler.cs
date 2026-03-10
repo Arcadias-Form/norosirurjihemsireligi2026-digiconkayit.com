@@ -242,6 +242,8 @@ namespace VeritabaniIslemMerkezi
                     new DataColumn("Giriþ Tarihi", Type.GetType("System.String")),
                     new DataColumn("Çýkýþ Tarihi", Type.GetType("System.String")),
                     new DataColumn("Refakatçi", Type.GetType("System.String")),
+                   new DataColumn("Tranfer Tipi", Type.GetType("System.String")),
+
                     new DataColumn("Fatura Ünvan", Type.GetType("System.String")),
                     new DataColumn("Fatura Adresi", Type.GetType("System.String")),
                     new DataColumn("Vergi Dairesi", Type.GetType("System.String")),
