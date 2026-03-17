@@ -28,6 +28,6 @@ namespace Model
             }
         }
 
-        public static string KurSimgesi = "€";
+        public static string KurSimgesi = "₺";
     }
 }

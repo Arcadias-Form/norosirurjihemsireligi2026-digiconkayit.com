@@ -75,9 +75,9 @@ namespace Norosirurjihemsireligi2026_Web.tr
                 string currencyCode = string.Empty;
                 string amount = string.Empty;
 
-                if (!Convert.ToBoolean(ddlKrediKartiUlke.SelectedValue))
-                {
-                    currencyCode = "978";
+                //if (!Convert.ToBoolean(ddlKrediKartiUlke.SelectedValue))
+                //{
+                    currencyCode = "949";
                     amount = $"{hfDovizUcret.Value.Replace(",", ".")}";
                     OModel = new OdemeTablosuModel
                     {
@@ -85,19 +85,19 @@ namespace Norosirurjihemsireligi2026_Web.tr
                         TurkLirasiUcret = "0,00 ₺",
                         KurUcret = "0,00 ₺"
                     };
-                }
-                else //TL
-                {
-                    TCMBKur(out decimal Euro);
-                    currencyCode = "949";
-                    amount = $"{(Convert.ToDecimal(hfDovizUcret.Value.Replace(",", "."), System.Globalization.CultureInfo.InvariantCulture) * Euro):0.00}".Replace(",", ".");
-                    OModel = new OdemeTablosuModel
-                    {
-                        OdemeID = hfOdemeID.Value,
-                        TurkLirasiUcret = $"{(Convert.ToDecimal(hfDovizUcret.Value.Replace(",", "."), System.Globalization.CultureInfo.InvariantCulture) * Euro):0.00}₺",
-                        KurUcret = $"{Euro:0.00} ₺"
-                    };
-                }
+                //}
+                //else //TL
+                //{
+                //    TCMBKur(out decimal Euro);
+                //    currencyCode = "949";
+                //    amount = $"{(Convert.ToDecimal(hfDovizUcret.Value.Replace(",", "."), System.Globalization.CultureInfo.InvariantCulture) * Euro):0.00}".Replace(",", ".");
+                //    OModel = new OdemeTablosuModel
+                //    {
+                //        OdemeID = hfOdemeID.Value,
+                //        TurkLirasiUcret = $"{(Convert.ToDecimal(hfDovizUcret.Value.Replace(",", "."), System.Globalization.CultureInfo.InvariantCulture) * Euro):0.00}₺",
+                //        KurUcret = $"{Euro:0.00} ₺"
+                //    };
+                //}
               
 
                 Dictionary<string, string> postParams = new Dictionary<string, string>();
@@ -226,6 +226,15 @@ namespace Norosirurjihemsireligi2026_Web.tr
                     Durum = false;
                 }
             } while (!Durum);
+
+
+
+
+           Euro = 53.00m; 
         }
+
+
+
+
     }
 }
