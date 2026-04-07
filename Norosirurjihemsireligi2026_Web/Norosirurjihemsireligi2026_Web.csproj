@@ -189,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Norosirurjihemsireligi2026.mdb" />
+    <Content Include="App_Data\Norosirurjihemsireligi2026_2026_0704_1244.mdb" />
     <Content Include="App_Data\Norosirurjihemsireligi2026_yedek.mdb" />
     <Content Include="css\all.min.css" />
     <Content Include="css\AlseinCSS.css" />

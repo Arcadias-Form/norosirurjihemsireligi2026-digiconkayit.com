@@ -1,4 +1,4 @@
-ï»¿<%@ Page Title="" Language="C#" MasterPageFile="~/en/en.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Norosirurjihemsireligi2026_Web.en.Default" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/en/en.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Norosirurjihemsireligi2026_Web.en.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="en_Head" runat="server">
     <link rel="stylesheet" type="text/css" href="<%=ResolveClientUrl("~/css/bootstrap-datepicker.min.css") %>" />
@@ -144,14 +144,14 @@
                         </tr>
                         <tr id="tr_GirisTarihi" runat="server" visible="false">
                             <td>*</td>
-                            <td>GiriÅŸ Tarihi</td>
+                            <td>Giriþ Tarihi</td>
                             <td>
                                 <asp:TextBox ID="txtGirisTarihi" runat="server" CssClass="form-control x-date" onchange="showLoadingIcon();" OnTextChanged="FiyatHesaplama" AutoPostBack="true"></asp:TextBox>
                             </td>
                         </tr>
                         <tr id="tr_CikisTarihi" runat="server" visible="false">
                             <td>*</td>
-                            <td>Ã‡Ä±kÄ±ÅŸ Tarihi</td>
+                            <td>Çýkýþ Tarihi</td>
                             <td>
                                 <asp:TextBox ID="txtCikisTarihi" runat="server" CssClass="form-control x-date" onchange="showLoadingIcon();" OnTextChanged="FiyatHesaplama" AutoPostBack="true"></asp:TextBox>
                             </td>
